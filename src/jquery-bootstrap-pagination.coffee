@@ -47,7 +47,7 @@
       @settings = $.extend(defaults, options)
 
       # add a click handler event to the view:
-      $("a", @el).live "click", @clicked
+      $("a", @el).on "click", @clicked
 
       # add this view to the original element
       # so it can be accessed later:
