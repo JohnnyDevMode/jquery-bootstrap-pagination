@@ -49,7 +49,7 @@
           ignore_single_page: true
         };
         this.settings = $.extend(defaults, options);
-        $("a", this.el).on("click", this.clicked);
+        $("a", this.el).click(this.clicked);
         this.el.data("paginationView", this);
       }
 
